@@ -4,7 +4,10 @@
  *  Created on: 07 Feb 2014
  *      Author: gwessels
  */
+#include "linalg.hpp"
+#include <iostream>
 
+using namespace std;
 using namespace LinAlg;
 
 int main(int argc, char* argv[])
@@ -26,8 +29,7 @@ int main(int argc, char* argv[])
 	matA.printMatrix();
 
 //	Retrieve diagonal of matrix and print to screen
-	vector<int> diag;
-	matA.getDiag(diag);
+	int* diag = matA.getDiag();
 	ind=0;
 	cout << endl;
 	cout << "Diagonal: \n";

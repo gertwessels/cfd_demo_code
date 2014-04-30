@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>cfd</name>
+	<name>tcfd</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -24,4 +24,11 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>LinAlg</name>
+			<type>2</type>
+			<location>/data/cpp_workspace/phd_code/LinAlg</location>
+		</link>
+	</linkedResources>
 </projectDescription>
