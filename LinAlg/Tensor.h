@@ -14,13 +14,13 @@ template <typename T>
 class Tensor {
 	public:
 		Tensor();
-		Tensor(int *dimsensions);
+		Tensor(int *dimsension);
 		Tensor(Tensor<T>& x);
 		virtual ~Tensor();
 
 		T*		getList();
+		int*	getDim();
 		void	initList(T fill);
-		void 	print();
 
 		void	add(Tensor<T> tensor);
 		void 	add(T scalar);
@@ -37,8 +37,9 @@ class Tensor {
 		void	operator= (const Tensor&);
 
 	protected:
-		int* 	dimensions;
+		int* 	dimension;
 		T* 		list;
+		int 	size;
 };
 
 } /* namespace LinAlg */
