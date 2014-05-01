@@ -123,13 +123,17 @@ namespace LinAlg
 			this->list[i] *= _scalar;
 	}
 
-	Tensor 	operator+ (const Tensor&) const;
-	Tensor 	operator+ (const T) const;
-	Tensor 	operator- (const Tensor&) const;
-	Tensor 	operator- (const T) const;
-	Tensor 	operator* (const Tensor&) const;
-	Tensor	operator* (const T) const;
-	void	operator= (const Tensor&);
+	template <typename T>
+	Tensor 	operator+ (const Tensor&) const
+	{
+
+	}
+//	Tensor 	operator+ (const T) const;
+//	Tensor 	operator- (const Tensor&) const;
+//	Tensor 	operator- (const T) const;
+//	Tensor 	operator* (const Tensor&) const;
+//	Tensor	operator* (const T) const;
+//	void	operator= (const Tensor&);
 
 
 } /* namespace LinAlg */
